@@ -8,7 +8,6 @@
 */
 
 const myName = "Valeriy";
-let admin;
-admin = myName;
+const admin = myName;
 console.log(admin);
 
