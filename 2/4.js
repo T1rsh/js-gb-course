@@ -23,4 +23,9 @@
 Подсказка: Возможно, вам понадобится округление чисел и оператор %.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+const number = +prompt("Введите число:"),
+    hundreds = Math.floor(number / 100) % 10,
+    decades = Math.floor(number / 10) % 10,
+    ones = number % 10;
+console.log(`В числе ${number} количество сотен: ${hundreds}, десятков: ${decades}, единиц: ${ones}`);
+
