@@ -10,4 +10,21 @@
 три числа. Проверять их не нужно.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+function getNumbers() {
+    const numbers = prompt("Введите числа через пробел:");
+    return numbers.split(" ").map(num => Number.parseInt(num));
+}
+
+function findMax(...numbers) {
+    let max = numbers[0];
+    numbers.forEach(item => {
+        if (item > max) {
+            max = item;
+        }
+    })
+    return max;
+}
+
+const numbers = getNumbers();
+console.log(`Максимальное значение среди чисел ${numbers.join(", ")} равно ${findMax(...numbers)}.`);
+

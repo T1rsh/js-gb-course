@@ -7,4 +7,8 @@
 который получаем от функции, в консоль.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+function cubing(num) {
+    return Math.pow(num, 3);
+}
+const number = 5;
+console.log(`${number} в кубе = ${cubing(number)}`);
