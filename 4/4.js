@@ -12,4 +12,10 @@ xxxx
 xxxxx
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+function drawHill(lines, symbol = "*") {
+    for (let i = 1; i <= lines; i++) {
+        console.log(symbol.repeat(i));
+    }
+}
+
+drawHill(20, "x");

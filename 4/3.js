@@ -14,4 +14,20 @@
 не окажется, значит нужно будет вывести пустой массив.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+function getRandomArray(n) {
+    const result = [];
+    for (let i = 0; i < n; i++){
+        result.push(Math.floor(Math.random() * 10));
+    }
+    return result;
+}
+
+const array = getRandomArray(5);
+const sum = array.reduce((sum, current) => sum + current, 0);
+const min = Math.min(...array);
+const newArr = array.map((item, n) => item === 3 ? n : NaN).filter(item => !!item);
+console.log(array);
+console.log(`Сумму элементов массива: ${sum}`);
+console.log(`Минимальное значение в массиве: ${min}`);
+console.log(newArr);
+
