@@ -8,10 +8,10 @@
 число. Функция должна вычесть из переданного ей числа 13% и вывести в консоль 
 сообщение "Размер заработной платы за вычетом налогов равен N."
 */
-const salaryCalc = salary => (salary * 0.87).toFixed(2);
+const salaryCalc = salary => (salary * 0.87);
 const salary = +prompt("Введите число:");
-if (salary) {
-    console.log(`Размер заработной платы за вычетом налогов равен ${salaryCalc(salary)}.`);
+if (Number.isFinite(salary)) {
+    console.log(`Размер заработной платы за вычетом налогов равен ${salaryCalc(salary).toFixed(2)}.`);
 } else {
     console.log("Значение задано неверно");
 }

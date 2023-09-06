@@ -20,6 +20,6 @@ console.log(sum(2, 6)); должно вывести число 8 в консол
 
 const sum = (num1, num2) => num1 + num2;
 const multi = (num1, num2) => num1 * num2;
-const sub = (num1, num2) => Math.max(num1, num2) - Math.min(num1, num2);
+const sub = (num1, num2) => Math.abs(num1 - num2);
 const div = (num1, num2) => num1 / num2;
 

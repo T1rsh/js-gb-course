@@ -16,13 +16,7 @@ function getNumbers() {
 }
 
 function findMax(...numbers) {
-    let max = numbers[0];
-    numbers.forEach(item => {
-        if (item > max) {
-            max = item;
-        }
-    })
-    return max;
+    return Math.max(...numbers);
 }
 
 const numbers = getNumbers();
