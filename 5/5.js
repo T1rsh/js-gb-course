@@ -17,4 +17,9 @@ const ru = [
   "воскресенье",
 ];
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+const result = en.reduce((obj, curr, index) => {
+  obj[curr] = ru[index]
+  return obj;
+}, {});
+
+console.log(result);

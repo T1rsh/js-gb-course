@@ -15,4 +15,4 @@ const numbers = {
   key7: 7,
 };
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+Object.values(numbers).filter(item => item >= 3).forEach(item => console.log(item));
